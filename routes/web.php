@@ -20,3 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin', 'AdminController@index')->name('admin');
+
+Route::get('/man/store', 'StoreController@index')->name('store');
+Route::any('/man/store/detail', 'StoreController@detail')->name('store_detail');
+Route::get('/man/store/del', 'StoreController@del')->name('store_del');
